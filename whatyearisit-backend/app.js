@@ -6,11 +6,11 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var yearRouter = require('./routes/year');
-
-
-var app = express();
 const cors = require('cors')
 app.use(cors());
+
+var app = express();
+
 
 app.use(logger('dev'));
 app.use(express.json());
